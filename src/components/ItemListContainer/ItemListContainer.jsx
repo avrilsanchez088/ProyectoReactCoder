@@ -1,13 +1,8 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
- 
-const products = {
-  nombre: 'Juan',
-  precio: 25,
-  id: 1,
-};
 const ItemListContainer = ({ products }) => {
   return (
     <div
@@ -20,8 +15,10 @@ const ItemListContainer = ({ products }) => {
     >
       {products.map((product) => (
         <Card key={product.id} style={{ width: '18rem', margin: 20 }}>
-          <Card.Img variant="top" src={product.imagen} />
-          <Card.Body>
+          <Link to={'/product/${product.id}'}> 
+           <Card.Img variant="top" src={product.imagen} />
+          </Link>
+          <Card.Body> 
             <Card.Title>{product.nombre}</Card.Title>
             <Card.Text>{product.precio}</Card.Text>
           </Card.Body>

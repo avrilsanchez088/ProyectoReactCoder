@@ -4,14 +4,14 @@ import ItemListContainer from '../components/ItemListContainer/ItemListContainer
 import axios from 'axios';
 
 const Category = () => {
-    const [products2, setProducts] = useState([]);
+    const [products, setProducts] = useState([]);
 
   useEffect(() => {
     axios
       .get('/productos.json')
       .then((res) => {
         console.log('Datos obtenidos con éxito:', res.data);
-        setProducts(res.data.products);
+        setProducts(res.data);
       })
       .catch((error) => console.log('Error al obtener datos:', error));
   }, []);

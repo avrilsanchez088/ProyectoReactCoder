@@ -2,6 +2,7 @@
 [ 
     {
       "id": 1,
+      "categoría": "Proteinas",
       "nombre": "Drink Mix fresa",
       "precio": 2300,
       "imagen": "./assets/img/drink-mix-fresa.jpg"
@@ -15,12 +16,14 @@
     {
       "id": 3,
       "nombre": "Proteina USN",
+      "categoría": "Proteinas",
       "precio": 2500,
       "imagen": "./assets/img/USN_choco.2kg.jpg"
     },
     {
         "id": 4,
         "nombre": "Energy Gel WOC",
+        "categoría": "Geles",
         "precio": 150,
         "imagen": "./assets/img/energy-gel-woc.jpg"
     },
