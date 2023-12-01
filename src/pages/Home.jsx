@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get('/productos.json')
+      .get('../src/data/productos.json')
       .then((res) => {
         console.log('Datos obtenidos con éxito:', res.data);
         setProducts(res.data);

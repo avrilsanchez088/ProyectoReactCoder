@@ -1,6 +1,6 @@
 import MainRoutes from "./routes/MainRouter"
 import "bootstrap/dist/css/bootstrap.min.css";
-import products from "/productos.json";
+import products from "../src/data/productos.json";
 
 import "./index.css";
 

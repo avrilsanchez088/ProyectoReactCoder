@@ -17,7 +17,7 @@ const NavBarComponent = () => {
             <Link to= "/">Home</Link>
             <Link to="#link">Sobre nosotros</Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item ><Link to={"/category/a"} style={{textDecoration: "none", color: "blue"}} > Proteínas</Link></NavDropdown.Item>
+              <NavDropdown.Item ><Link to={"/category/Proteinas"} style={{textDecoration: "none", color: "blue"}} > Proteínas</Link></NavDropdown.Item>
               <NavDropdown.Item ><Link to={"/category/a"} style={{textDecoration: "none", color: "blue"}} > Geles deportivos</Link></NavDropdown.Item>
             </NavDropdown>
           </Nav>
