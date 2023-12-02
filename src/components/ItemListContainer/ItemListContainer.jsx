@@ -15,7 +15,7 @@ const ItemListContainer = ({ products }) => {
     >
       {products.map((product) => (
         <Card key={product.id} style={{ width: '18rem', margin: 20 }}>
-          <Link to={'/product/${product.id}'}> 
+          <Link to={`/product/${product.id}`}> 
            <Card.Img variant="top" src={product.imagen} />
           </Link>
           <Card.Body> 

@@ -10,8 +10,8 @@ const MainRoutes = () => {
       <NavBarComponent/>
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/category/:categoryId" element={<Category/>}/>
-        <Route path="/category/:productId" element={<ItemDetailContainer />}/>
+        <Route path="/product/:categoryId" element={<Category/>}/>
+        <Route path="/product/:productId" element={<ItemDetailContainer />}/>
       </Routes>
     </BrowserRouter>
   );

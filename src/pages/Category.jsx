@@ -4,13 +4,14 @@ import ItemListContainer from '../components/ItemListContainer/ItemListContainer
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
+
 const Category = () => {
     const [products, setProducts] = useState([]);
     const { categoryId} = useParams()
 
   useEffect(() => {
     axios
-      .get('../../src/data/products.json')
+      .get('../src/data/productos.json')
       .then((res) => {
         console.log('Datos obtenidos con éxito:', res.data);
         setProducts(res.data);

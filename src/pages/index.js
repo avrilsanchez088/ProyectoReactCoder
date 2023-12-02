@@ -1,2 +1,2 @@
 export * from "./Home";
-export * from "./ItemDetailContainer"
+export * from "../components/ItemDetailContainer/ItemDetailContainer"

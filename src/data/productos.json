@@ -5,34 +5,34 @@
       "categoria": "Proteinas",
       "nombre": "Drink Mix fresa",
       "precio": 2300,
-      "imagen": "./assets/img/drink-mix-fresa.jpg"
+      "imagen": "../../src/assets/img/drink-mix-fresa.jpg"
     },
     {
       "id": 2,
       "categoria": "Proteinas",
       "nombre": "Pure BCAA",
       "precio": 990,
-      "imagen": "./assets/img/pure-bcaa-usn.jpg"
+      "imagen": "../../src/assets/img/pure-bcaa-usn.jpg"
     },
     {
       "id": 3,
       "nombre": "Proteina USN",
       "categoria": "Proteinas",
       "precio": 2500,
-      "imagen": "./assets/img/USN_choco.2kg.jpg"
+      "imagen": "../../src/assets/img/USN_choco.2kg.jpg"
     },
     {
         "id": 4,
         "nombre": "Energy Gel WOC",
         "categoría": "Geles",
         "precio": 150,
-        "imagen": "./assets/img/energy-gel-woc.jpg"
+        "imagen": "../../src/assets/img/energy-gel-woc.jpg"
     },
     {
         "id": 5,
         "categoria": "Proteinas",
         "nombre": "Power Drink cibeles",
         "precio": 700,
-        "imagen": "./assets/img/powerdrink-cibeles.jpg"
+        "imagen": "../../src/assets/img/powerdrink-cibeles.jpg"
     }
 ]
