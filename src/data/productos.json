@@ -4,6 +4,7 @@
       "id": 1,
       "categoria": "Proteinas",
       "nombre": "Drink Mix fresa",
+      "descripcion": "Fórmula que hidrata, repone minerales y provee energía, permitiendo que los niveles fisiológicos se mantengan en un nivel óptimo durante todo el tiempo.",
       "precio": 2300,
       "imagen": "../../src/assets/img/drink-mix-fresa.jpg"
     },
@@ -11,13 +12,15 @@
       "id": 2,
       "categoria": "Proteinas",
       "nombre": "Pure BCAA",
+      "descripcion": "Pure BCAA es un suplemento de aminoácidos premium con una proporción de 2: 1: 1, conocida como la proporción de aminoácidos más eficazmente absorbida.",
       "precio": 990,
       "imagen": "../../src/assets/img/pure-bcaa-usn.jpg"
     },
     {
       "id": 3,
-      "nombre": "Proteina USN",
       "categoria": "Proteinas",
+      "nombre": "WHEY PROTEIN Chocolate 908g",
+      "descripcion": "Whey Protein BlueLab ™ 100%  es una combinación ultra premium del Isolado, Concentrado e Hidrolizado de proteína de suero de la más alta calidad para un desa-rrollo muscular óptimo, soporte y recuperación.",
       "precio": 2500,
       "imagen": "../../src/assets/img/USN_choco.2kg.jpg"
     },
@@ -25,13 +28,15 @@
         "id": 4,
         "nombre": "Energy Gel WOC",
         "categoría": "Geles",
-        "precio": 150,
+        "descripcion": "WOC Energy Gel es un suplemento deportivo formulado para reponer de forma rápida y efectiva la energía durante el ejercicio físico.",
+        "precio": 190,
         "imagen": "../../src/assets/img/energy-gel-woc.jpg"
     },
     {
         "id": 5,
         "categoria": "Proteinas",
         "nombre": "Power Drink cibeles",
+        "descripcion": "Bebida rehidratante y recuperadora para todo tipo de persona que realice actividad física. Repone la energía y las sales minerales perdidas durante el ejercicio.",
         "precio": 700,
         "imagen": "../../src/assets/img/powerdrink-cibeles.jpg"
     }

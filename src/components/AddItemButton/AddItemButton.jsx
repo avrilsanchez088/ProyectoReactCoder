@@ -1,0 +1,22 @@
+import React, { useContext } from 'react'
+import { Button } from 'react-bootstrap'
+import { CartContext } from '../../context'
+
+
+export const AddItemButton = ({label = "Agregar al carrito", quantity, handleResetQuantity}) => {
+  
+  const { itemCount, setItemCount } = useContext(CartContext);
+  
+
+  const handleAddCart = () => {
+    setItemCount( itemCount + quantity);
+    handleResetQuantity();
+  }
+
+
+  return (
+    <Button onClick={handleAddCart} style={{margin: '10px 5px', backgroundColor: "rgb(5, 73, 119)"}}>{label}</Button>
+  )
+}
+
+

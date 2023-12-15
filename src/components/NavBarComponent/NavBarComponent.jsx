@@ -9,15 +9,15 @@ const NavBarComponent = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand><Link to={"/"} style={{textDecoration: "none", color: "blue"}} >Power Sport</Link></Navbar.Brand>
+        <Navbar.Brand><Link to={"/"} style={{textDecoration: "none", color: "rgb(5, 73, 119)"}} >Power Sport</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             
-            <Link to= "/">Home</Link>
-            <Link to="#link">Sobre nosotros</Link>
-            <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item ><Link to={"/category/Proteinas"} style={{textDecoration: "none", color: "blue"}} > Proteínas</Link></NavDropdown.Item>
+            <Link style={{textDecoration: "none", color: "rgb(5, 73, 119)", margin: '10px 5px'}} to= "/">Home</Link>
+            <Link style={{textDecoration: "none", color: "rgb(5, 73, 119)", margin: '10px 5px'}} to="#link">Sobre nosotros</Link>
+            <NavDropdown style={{textDecoration: "none", color: "rgb(5, 73, 119)", margin: '10px 5px'}} title="Productos" id="basic-nav-dropdown">
+              <NavDropdown.Item  ><Link style={{textDecoration: "none", color: "rgb(5, 73, 119)", margin: '10px 5px'}} to={"/category/Proteinas"} > Proteínas</Link></NavDropdown.Item>
               <NavDropdown.Item ><Link to={"/category/a"} style={{textDecoration: "none", color: "blue"}} > Geles deportivos</Link></NavDropdown.Item>
             </NavDropdown>
           </Nav>

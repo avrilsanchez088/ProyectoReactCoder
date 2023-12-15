@@ -1,27 +1,34 @@
-import axios from 'axios';
-import React, { useEffect } from 'react'
+
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
+import { getDocs, getFirestore, collection, getDoc, doc } from 'firebase/firestore';
 
 export const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
-  const { productId } = useParams()
-  console.log(productId)
+  
 
-  useEffect(() => {
-    axios
-    axios.get('/src/data/productos.json')
+  useEffect (() => {
+    const db = getFirestore();
+    const collectionRef = collection(db, "products");
+
+    getDocs(collectionRef)
       .then((res) => {
-        const foundProduct = res.data.find((elem) => elem.id === parseInt (productId));
-        setProduct(foundProduct);
+        const data = res.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setProducts(data);
       })
       .catch((error) => console.log('Error al obtener datos:', error));
-  }, [productId]);
-
+  })
+  
   return(
-   <ItemDetail {...product} />
-   
-  );
+    <ItemDetail {...product} />
+    
+   );
+
+  
 };
 
 export default ItemDetailContainer
