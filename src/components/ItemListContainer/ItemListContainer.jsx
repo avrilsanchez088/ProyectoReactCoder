@@ -16,11 +16,11 @@ const ItemListContainer = ({ products }) => {
       {products.map((product) => (
         <Card key={product.id} style={{ width: '18rem', margin: 20 }}>
           <Link to={`/product/${product.id}`}> 
-           <Card.Img variant="top" src={product.imagen} />
+           <Card.Img variant="top" src={product.thumbnail} />
           </Link>
           <Card.Body> 
-            <Card.Title>{product.nombre}</Card.Title>
-            <Card.Text>{product.precio}</Card.Text>
+            <Card.Title>{product.title}</Card.Title>
+            <Card.Text>{product.price}</Card.Text>
           </Card.Body>
         </Card>
       ))}

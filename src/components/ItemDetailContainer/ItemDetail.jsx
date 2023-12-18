@@ -4,15 +4,17 @@ import ItemQuantitySelector from '../ItemQuantitySelector/ItemQuantitySelector';
 import { AddItemButton } from '../AddItemButton';
 
 
-const ItemDetail = ({id, imagen, nombre, precio, descripcion}) => {
+const ItemDetail = ({id, thumbnail, title, price, description}) => {
+    
+
     return (
         <div>
             <Card key={id} style={{ width: '18rem', margin: 20 }}>
-                <Card.Img variant="top" src={imagen} />
+                <Card.Img variant="top" src={thumbnail} />
                 <Card.Body>
-                    <Card.Title>{nombre}</Card.Title>
-                    <Card.Text>{descripcion}</Card.Text>
-                    <Card.Text>{precio}</Card.Text>
+                    <Card.Title>{title}</Card.Title>
+                    <Card.Text>{description}</Card.Text>
+                    <Card.Text>{price}</Card.Text>
                 </Card.Body>
                 <ItemQuantitySelector/>
                 
